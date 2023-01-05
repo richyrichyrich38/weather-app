@@ -18,12 +18,12 @@ $(document).ready(function() {
         // Extract the relevant data from the API response
         var temperature = data.main.temp;
         var humidity = data.main.humidity;
-        var forecast = data.weather[0].description;
+        var windSpeed = data.wind.speed;
         
         // Update the weather data div with the new data
         $('#forecast').html('Temperature: ' + temperature + '<br>' +
                                 'Humidity: ' + humidity + '<br>' +
-                                'Forecast: ' + forecast);
+                                'Wind Speed: ' + windSpeed);
       }
     });
   });
