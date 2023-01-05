@@ -28,6 +28,7 @@ function inputSubmitted(cityName) {
       $.get(forecastURL + `lat=${currentData.coord.lat}&lon=${currentData.coord.lon}`)
         .then(function(forecastData) {
           console.log(forecastData);
+
         })
 
     })
